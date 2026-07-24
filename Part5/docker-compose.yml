@@ -23,8 +23,9 @@ services:
     db-loader:
       build: db-loader/.
       volumes: 
-        - <Enter Here>allergy-lab-watchfolder:/mnt/watchfolder/
+        - /Volumes/otukpa_data/Quantic/allergylab/Part5/allergy-lab-watchfolder:/mnt/watchfolder/
       environment:
         FOLDER_PATH: /mnt/watchfolder/
       depends_on:
         - dbhost
+   
